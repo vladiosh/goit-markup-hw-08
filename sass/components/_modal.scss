@@ -28,15 +28,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  max-height: 609px;
+  height: 100%;
+  // min-width: 528px;
+  // min-height: 581px;
 
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-color);
   padding: 40px;
+  // overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    width: 528px;
+    max-height: 581px;
+    height: 100%;
+  }
 }
 
 .modal-form__box {
@@ -132,12 +146,19 @@
 }
 
 .checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--primary-text-color);
   display: flex;
   position: relative;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    align-items: center;
+    justify-content: center;
+  }
 
   span {
     width: 16px;
@@ -195,11 +216,15 @@
 }
 
 .checkbox__contract {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   text-decoration-line: underline;
   color: var(--accent-first-color);
   margin-left: 3px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-button {

@@ -144,12 +144,26 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  max-height: 609px;
+  height: 100%;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-color);
   padding: 40px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    width: 528px;
+    max-height: 581px;
+    height: 100%;
+  }
 }
 
 .modal-form__box {
@@ -240,12 +254,20 @@ body {
 }
 
 .checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--primary-text-color);
   display: flex;
   position: relative;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .checkbox__label span {
   width: 16px;
@@ -299,11 +321,17 @@ body {
 }
 
 .checkbox__contract {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   text-decoration-line: underline;
   color: var(--accent-first-color);
   margin-left: 3px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__contract {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-button {
@@ -754,6 +782,7 @@ body {
   .team__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -783,14 +812,33 @@ body {
 }
 
 .team__item {
-  width: calc((100% - 120px) / 4);
-  margin-left: 30px;
-}
-.team__list .team__item {
   background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
+  max-width: 450px;
+}
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    display: flex;
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
 }
 
 .clients {
