@@ -9,14 +9,23 @@
 }
 
 .foot-container {
-  // display: flex;
-  // align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.foot-container__tablet {
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .logo-contacts {
   display: block;
   text-align: center;
-  // margin-right: 70px;
 }
 
 .logo--inverce {
@@ -65,10 +74,14 @@
   margin-bottom: 9px;
 }
 
+.contacts--indents {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
 .join {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 206px;
 }
 
 .join__title {
@@ -166,9 +179,10 @@
 }
 
 .subscribe__input {
-  width: 450px;
+  width: 100%;
+  // width: 450px;
   height: 50px;
-  padding-left: 15px;
+  padding: 0 15px;
   margin-bottom: 20px;
 
   font-size: 16px;

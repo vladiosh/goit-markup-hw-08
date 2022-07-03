@@ -522,7 +522,15 @@ body {
 }
 
 .menu-open-btn {
-  display: inline-flex;
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  padding: 0;
+}
+
+.menu-close-btn {
+  display: block;
   border: none;
   background-color: transparent;
   margin-left: auto;
@@ -825,7 +833,6 @@ body {
 @media screen and (min-width: 1200px) {
   .team__list {
     display: flex;
-    margin-left: -30px;
   }
 }
 .team__list .team__name {
@@ -876,6 +883,12 @@ body {
     width: calc((100% - 120px) / 4);
     margin: 15px;
   }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .clients {
@@ -1078,6 +1091,23 @@ body {
   color: var(--accent-first-color);
 }
 
+.foot-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.foot-container__tablet {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .foot-container__tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .logo-contacts {
   display: block;
   text-align: center;
@@ -1118,10 +1148,14 @@ body {
   margin-bottom: 9px;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts--indents {
+    margin-bottom: 60px;
+  }
+}
+
 .join {
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 206px;
 }
 
 .join__title {
@@ -1204,9 +1238,9 @@ body {
 }
 
 .subscribe__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
-  padding-left: 15px;
+  padding: 0 15px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;

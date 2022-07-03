@@ -185,7 +185,7 @@
 }
 
 .menu-open-btn {
-  display: inline-flex;
+  display: block;
   border: none;
   background-color: transparent;
   margin-left: auto;
@@ -193,4 +193,9 @@
 }
 
 .menu-close-btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  padding: 0;
 }

@@ -34,7 +34,6 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: -30px;
   }
 
   & .team__name {
@@ -91,4 +90,9 @@
 
   // width: calc((100% - 120px) / 4);
   // margin-left: 30px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
