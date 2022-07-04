@@ -12,11 +12,16 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .foot-container__tablet {
   text-align: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -24,8 +29,16 @@
 }
 
 .logo-contacts {
-  display: block;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .logo--inverce {
@@ -70,6 +83,13 @@
   }
 }
 
+.contacts__item {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -81,7 +101,13 @@
 }
 
 .join {
-  width: 206px;
+  // width: 206px;
+  // margin-left: auto;
+  // margin-right: auto;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .join__title {
@@ -138,9 +164,11 @@
 /* ----------------subscribe----------------- */
 
 .subscribe {
-  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    padding: 0 159px 0;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 570px;
@@ -149,6 +177,7 @@
     flex-direction: column;
     align-items: center;
     align-items: baseline;
+    padding: 0;
   }
   // display: flex;
 }

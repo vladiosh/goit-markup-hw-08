@@ -30,17 +30,21 @@
           >
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link current"
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link link current"
                 >Студия</a
               >
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link"
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link link"
                 >Портфолио</a
               >
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link link">Контакты</a>
+              <a href="" class="site-nav__link site-nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -70,7 +74,7 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-open-btn js-open-menu">
+        <button type="button" class="menu-btn header__menu-btn" data-menu-open>
           <svg width="40px" height="40px" aria-label="Переключатель моб меню">
             <use
               class="icon-open-menu"
@@ -79,59 +83,81 @@
           </svg>
         </button>
       </div>
-      <!-- <div class="mob-menu">
-        <div class="container">
-          <button type="button" class="menu-close-btn js-close-menu">
-            <svg width="40px" height="40px" aria-label="Переключатель моб меню">
-              <use
-                class="icon-close-menu"
-                href="./images/icons.svg#icon-cross"
-              ></use>
-            </svg>
-          </button>
-          <div class="mob-menu__nav__container">
-            <ul class="mob-menu__nav list">
-              <li class="mob-menu__item">
-                <a href="./index.html" class="site-nav__link">Студия</a>
+
+      <!-- -----mob-menu----- -->
+
+      <div class="mob-menu" data-menu>
+        <div class="mob-menu__container">
+          <div class="mob-menu__top">
+            <button
+              type="button"
+              class="menu-btn mob-menu__menu-btn"
+              data-menu-close
+            >
+              <svg
+                width="40px"
+                height="40px"
+                aria-label="Переключатель моб меню"
+              >
+                <use
+                  class="icon-close-menu"
+                  href="./images/icons.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="mob-site-nav list">
+              <li class="mob-site-nav__item">
+                <a
+                  href="./index.html"
+                  class="mob-site-nav__link site-nav__link--current link"
+                  >Студия</a
+                >
               </li>
-              <li class="mob-menu__item">
-                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-              </li>
-              <li class="mob-menu__item">
-                <a href="" class="site-nav__link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mob-menu__contact">
-            <ul class="mob-menu__contacts list">
-              <li class="mob-menu__item">
-                <a href="tel:+380961111111" class="tel__link">
-                  +38 096 111 11 11</a
+              <li class="mob-site-nav__item">
+                <a href="./portfolio.html" class="mob-site-nav__link link"
+                  >Портфолио</a
                 >
               </li>
               <li class="mob-menu__item">
-                <a href="mailto:info@dewstudio.com" class="mail__link">
+                <a href="" class="mob-site-nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu__bottom">
+            <ul class="mob-contact list">
+              <li class="mob-contact__item-tel">
+                <a href="tel:+380961111111" class="mob-contact__link-tel link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contact__item-mail">
+                <a
+                  href="mailto:info@dewstudio.com"
+                  class="mob-contact__link-mail link"
+                >
                   info@dewstudio.com</a
                 >
               </li>
             </ul>
-            <ul class="mob-menu__social list">
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Instagram</a>
+            <ul class="mob-soc-link list">
+              <li class="mob-soc-link__item">
+                <a href="" class="mob-soc-link__link link">Instagram</a>
               </li>
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Twitter</a>
+              <li class="mob-soc-link__item">
+                <a href="" class="mob-soc-link__link link">Twitter</a>
               </li>
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Facebook</a>
+              <li class="mob-soc-link__item">
+                <a href="" class="mob-soc-link__link link">Facebook</a>
               </li>
-              <li class="mob-menu__social__item">
-                <a href="" class="mob-menu__social__link">Linkedin</a>
+              <li class="mob-soc-link__item">
+                <a href="" class="mob-soc-link__link link">Linkedin</a>
               </li>
             </ul>
           </div>
         </div>
-      </div> -->
+      </div>
     </header>
 
     <main>
@@ -748,54 +774,6 @@
         </form>
       </div>
     </div>
-    <!-- <div class="menu-container js-menu-container id=mobile-menu">
-      <div class="mob-menu">
-        <button type="button" class="menu-button js-close-menu">
-          <svg width="40px" height="40px" aria-label="Переключатель моб меню">
-            <use class="icon-menu" href="./images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <div class="mob-menu__nav__container">
-          <ul class="mob-menu__nav list">
-            <li class="mob-menu__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="mob-menu__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="mob-menu__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="mob-menu__contact">
-        <ul class="mob-menu__contacts list">
-          <li class="mob-menu__item">
-            <a href="tel:+380961111111" class="tel__link"> +38 096 111 11 11</a>
-          </li>
-          <li class="mob-menu__item">
-            <a href="mailto:info@dewstudio.com" class="mail__link">
-              info@dewstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mob-menu__social">
-          <li class="mob-menu__social__item">
-            <a href="" class="mob-menu__social__link">Instagram</a>
-          </li>
-          <li class="mob-menu__social__item">
-            <a href="" class="mob-menu__social__link">Twitter</a>
-          </li>
-          <li class="mob-menu__social__item">
-            <a href="" class="mob-menu__social__link">Facebook</a>
-          </li>
-          <li class="mob-menu__social__item">
-            <a href="" class="mob-menu__social__link">Linkedin</a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
