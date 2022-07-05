@@ -257,14 +257,12 @@ body {
 }
 
 .checkbox__label {
-  font-size: 12px;
-  line-height: 1.16;
-  color: var(--primary-text-color);
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  color: var(--primary-text-color);
+  font-size: 12px;
+  line-height: 1.16;
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
@@ -272,6 +270,8 @@ body {
     line-height: 1.71;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .checkbox__label span {
@@ -289,10 +289,10 @@ body {
   border: none;
 }
 
-.chek-icon {
+.checkbox__icon {
   fill: transparent;
 }
-.checkbox__input:checked + .checkbox__label .chek-icon {
+.checkbox__input:checked + .checkbox__label .checkbox__icon {
   fill: var(--primary-color);
 }
 
@@ -326,6 +326,7 @@ body {
 }
 
 .checkbox__contract {
+  display: inline-block;
   font-size: 12px;
   line-height: 1.16;
   text-decoration-line: underline;
