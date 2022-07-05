@@ -195,18 +195,6 @@
   }
 }
 
-// .menu-button .icon-close-menu {
-//   display: none;
-// }
-
-// .menu-button .js-open-menu .icon-close-menu {
-//   display: block;
-// }
-
-// .menu-button .js-open-menu .icon-open-menu {
-//   display: none;
-// }
-
 .menu-btn {
   display: block;
   border: none;
@@ -244,6 +232,10 @@
 
 .header__menu-btn {
   margin-left: auto;
+  &:hover,
+  &:focus {
+    fill: var(--accent-first-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -254,6 +246,10 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-first-color);
+  }
 }
 
 .mob-site-nav__item:not(:last-child) {
