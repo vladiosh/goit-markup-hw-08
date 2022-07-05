@@ -33,20 +33,27 @@
   }
 }
 
-.portfolio__button:not(:last-child) {
-  margin-right: 8px;
-}
-
 .portfolio__filter {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 15px 8px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 }
 // display: flex;
 // margin-bottom: 50px;
 // justify-content: center;
+
+// .portfolio__button:not(:last-child) {
+//   @media screen and (min-width: 768px) {
+//     margin-right: 8px;
+//   }
+// }
 
 .card__list {
   display: flex;
