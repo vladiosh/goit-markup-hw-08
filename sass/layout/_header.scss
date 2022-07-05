@@ -191,8 +191,12 @@
   height: 100vh;
   z-index: 10;
   opacity: 1;
-  transform: translateX(0);
-  transition: opacity var(--timing-function);
+  transition: 250ms opacity var(--time-function),
+    visibility var(--time-function);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mob-menu__container {
