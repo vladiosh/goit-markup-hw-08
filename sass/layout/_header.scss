@@ -213,6 +213,7 @@
   height: 100vh;
   z-index: 10;
   opacity: 1;
+
   transition: 250ms opacity var(--time-function),
     visibility var(--time-function);
 
@@ -232,13 +233,16 @@
 
 .header__menu-btn {
   margin-left: auto;
-  &:hover,
-  &:focus {
-    fill: var(--accent-first-color);
-  }
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+.icon-open-menu {
+  &:hover,
+  &:focus {
+    fill: var(--accent-first-color);
   }
 }
 

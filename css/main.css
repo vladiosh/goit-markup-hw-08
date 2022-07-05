@@ -592,13 +592,14 @@ body {
 .header__menu-btn {
   margin-left: auto;
 }
-.header__menu-btn:hover, .header__menu-btn:focus {
-  fill: var(--accent-first-color);
-}
 @media screen and (min-width: 768px) {
   .header__menu-btn {
     display: none;
   }
+}
+
+.icon-open-menu:hover, .icon-open-menu:focus {
+  fill: var(--accent-first-color);
 }
 
 .mob-menu__menu-btn {
