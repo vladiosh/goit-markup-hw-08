@@ -233,16 +233,13 @@
 
 .header__menu-btn {
   margin-left: auto;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.icon-open-menu {
   &:hover,
   &:focus {
     fill: var(--accent-first-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 

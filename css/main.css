@@ -592,14 +592,13 @@ body {
 .header__menu-btn {
   margin-left: auto;
 }
+.header__menu-btn:hover, .header__menu-btn:focus {
+  fill: var(--accent-first-color);
+}
 @media screen and (min-width: 768px) {
   .header__menu-btn {
     display: none;
   }
-}
-
-.icon-open-menu:hover, .icon-open-menu:focus {
-  fill: var(--accent-first-color);
 }
 
 .mob-menu__menu-btn {
@@ -1110,8 +1109,8 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .button-filter {
@@ -1141,8 +1140,10 @@ img {
 
 .portfolio__filter {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
 
 .card__list {
