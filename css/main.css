@@ -1112,6 +1112,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .button-filter {
   background-color: var(--second-color);
@@ -1145,6 +1151,11 @@ img {
   .portfolio__filter {
     margin-bottom: 30px;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1287,6 +1298,8 @@ img {
 @media screen and (min-width: 1200px) {
   .logo--inverce {
     margin: 0 0 20px 0;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
