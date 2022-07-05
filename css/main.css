@@ -263,6 +263,8 @@ body {
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
@@ -276,7 +278,7 @@ body {
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
-  border-radius: 3px;
+  border-radius: 2px;
   margin-right: 8px;
   display: flex;
   justify-content: center;
