@@ -34,8 +34,8 @@
   width: 100%;
 
   @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
+    max-height: 581px;
     overflow: hidden;
   }
 
