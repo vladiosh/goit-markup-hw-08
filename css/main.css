@@ -263,9 +263,14 @@ body {
   letter-spacing: 0.01em;
 }
 
+.checkbox {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .checkbox__label {
   color: var(--primary-text-color);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.16;
   display: flex;
   align-items: center;
@@ -283,16 +288,16 @@ body {
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 3px;
-  margin-right: 8px;
+  margin-right: 5px;
   display: flex;
 }
 
 .checkbox__contract {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.16;
   color: var(--accent-first-color);
   text-decoration-line: underline;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 @media screen and (min-width: 1200px) {
   .checkbox__contract {
