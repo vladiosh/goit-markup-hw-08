@@ -29,6 +29,9 @@
 }
 
 .logo-contacts {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (max-width: 1199px) {
     text-align: center;
     display: block;
@@ -94,12 +97,6 @@
 
 .contacts__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.contacts--indents {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .join {
@@ -168,9 +165,6 @@
 .subscribe {
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 768px) {
-    padding: 0 159px 0;
-  }
 
   @media screen and (min-width: 1200px) {
     width: 570px;
@@ -227,6 +221,10 @@
   background-color: var(--third-color);
 
   transition: border-color 250ms var(--time-function);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-left: 15px;
